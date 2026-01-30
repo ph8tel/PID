@@ -1,0 +1,33 @@
+{
+  "name": "socket-based-pid",
+  "version": "1.0.0",
+  "description": "A socket based servo controller for Raspberry Pi",
+  "license": "ISC",
+  "author": "ph8tel",
+  "type": "commonjs",
+  "main": "socketServer.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.test.js"
+    ]
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "pca9685": "^5.0.0",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "ws-mock": "^0.1.0"
+  }
+}
