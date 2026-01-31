@@ -22,8 +22,8 @@ let targetTilt = 0;
 
 // PID controllers (tune these)
 const dt = 0.02; // 20ms loop
-const panPID = new PID(0.6, 0.02, 0.1, dt);
-const tiltPID = new PID(0.6, 0.02, 0.1, dt);
+const panPID = new PID(0.6, 0.05, 0.1, dt);
+const tiltPID = new PID(0.6, 0.05, 0.1, dt);
 
 // ---- Servo helpers ----
 function angleToPulse(angle) {
@@ -69,4 +69,5 @@ module.exports = {
     pan: currentPan,
     tilt: currentTilt
   })
+
 };
